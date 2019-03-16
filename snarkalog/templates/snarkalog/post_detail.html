@@ -7,7 +7,19 @@
                 {{ post.published_date }}
             </div>
         {% endif %}
+
+        {% if user.is_authenticated %}
+          <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
+        <form action="{% url 'change_score' pk=post.pk choice='rainbow' %}" method="POST" class="post-form">{% csrf_token %}
+            <button type="submit" class="rainbow btn btn-default">&#x1F308;</button>
+        </form>
+        <code>{{ post.score }}</code>
+        <form action="{% url 'change_score' pk=post.pk choice='unicorn' %}" method="POST" class="post-form">{% csrf_token %}
+            <button type="submit" class="unicorn btn btn-default">&#x1F984;</button>
+        </form>
+        <code>{{ post.uniscore }}</code>
     </div>
 {% endblock %}
