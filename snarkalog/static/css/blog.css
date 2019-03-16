@@ -1,40 +1,55 @@
-#page {
-  display: grid;
-  width: 100%;
-  height: 200px;
-  grid-template: [header-left] "head head" 30px [header-right]
-                 [main-left]   "nav  main" 1fr  [main-right]
-                 [footer-left] "nav  foot" 30px [footer-right]
-                 / 120px 1fr;
+h1 a, h2 a {
+    color: #C25250;
+    font-family: Georgia;
 }
 
-header {
-  background-color: rgba(206, 190, 190, 1);
-  grid-area: head;
+body {
+    padding-left: 20px;
 }
 
-nav {
-  background-color: rgba(213, 185, 178, 1);
-  grid-area: nav;
+.page-header {
+    background-color: #C25100;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
 }
 
-main {
-  background-color: white;
-  grid-area: main;
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
 }
 
-footer {
-  background-color: rgba(162, 103, 105, 1);
-  grid-column: foot;
+.content {
+    margin-left: 40px;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Helvetica', cursive;
+}
 
+.date {
+    color: #828282;
+}
 
+.save {
+    float: right;
+}
 
+.post-form textarea, .post-form input {
+    width: 100%;
+}
 
-/* RGB */
-$color1: rgba(206, 190, 190, 1);
-$color2: rgba(236, 226, 208, 1);
-$color3: rgba(213, 185, 178, 1);
-$color4: rgba(162, 103, 105, 1);
-$color5: rgba(109, 46, 70, 1);
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a, .post h2 a:visited {
+    color: #000000;
+}
