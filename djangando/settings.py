@@ -25,7 +25,10 @@ SECRET_KEY = '%9d^#nw@t9@zivtximszil^m$@w$l58+udr)php*r$8i+vp_3e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1'
+
+]
 
 
 # Application definition
@@ -55,7 +58,7 @@ ROOT_URLCONF = 'djangando.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['snarkalog/templates/snarkalog'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
