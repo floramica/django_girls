@@ -26,7 +26,8 @@ SECRET_KEY = '%9d^#nw@t9@zivtximszil^m$@w$l58+udr)php*r$8i+vp_3e'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1'
+    '127.0.0.1',
+    'gabriellemich.eu.pythonanywhere.com',
 
 ]
 
