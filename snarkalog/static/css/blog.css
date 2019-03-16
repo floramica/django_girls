@@ -8,7 +8,7 @@ body {
 }
 
 .page-header {
-    background-color: #C25100;
+    background: -webkit-linear-gradient(left, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -48,6 +48,10 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
+}
+
+.post form {
+    display: inline;
 }
 
 .post h2 a, .post h2 a:visited {
