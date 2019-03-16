@@ -8,7 +8,7 @@ body {
 }
 
 .page-header {
-    background: -webkit-linear-gradient(left, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+    background: -webkit-linear-gradient(left, #fca09a, #fcccd3, #ffcc9d, #98ddad, #81d7ec, #a0aaed);
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -52,6 +52,15 @@ h1, h2, h3, h4 {
 
 .post form {
     display: inline;
+}
+
+.post button {
+    padding: 20px;
+    font-size: 120px;
+}
+
+.post code {
+    font-size: 3em;
 }
 
 .post h2 a, .post h2 a:visited {
